@@ -1,0 +1,30 @@
+{
+  "name": "logservice",
+  "version": "0.0.1",
+  "description": "log microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lecle/logservice.git"
+  },
+  "keywords": [
+    "microservice,log"
+  ],
+  "author": "Daesun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lecle/logservice/issues"
+  },
+  "homepage": "https://github.com/lecle/logservice",
+  "dependencies": {
+    "assert": "~1.2.0",
+    "istanbul": "^0.3.5",
+    "mocha": "~2.0.1",
+    "winston": "^0.8.3"
+  }
+}
