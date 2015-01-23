@@ -9,6 +9,7 @@ describe('server', function() {
 
             log.init(dummyContainer, function(err) {
 
+                log.log({data : 'test'}, '', function (){});
                 log.close(done);
             });
         });
